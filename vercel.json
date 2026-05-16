@@ -1,9 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.mjs",
-      "use": "@vercel/node"
-    }
+  "rewrites": [
+    { "source": "/bare/:path*", "destination": "/api/bare" }
   ]
 }
