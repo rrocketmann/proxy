@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Zaluea
+    env: node
+    buildCommand: npm install
+    startCommand: node .
+    plan: free
