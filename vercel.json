@@ -1,6 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/bare/:path*", "destination": "/index.mjs" },
-    { "source": "/(.*)", "destination": "/index.mjs" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.mjs",
+      "use": "@vercel/node"
+    }
   ]
 }
